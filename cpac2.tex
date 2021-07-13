@@ -1,0 +1,103 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{gensymb}
+\usepackage{tcolorbox}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{amssymb}
+\usepackage{tabularx}
+\usepackage{natbib}
+\usepackage{float}
+\author{John Montgomery }
+\date{June 2021}
+\title{
+  Snells law \\
+  \large Calculate the refractive index of glass block
+  }
+
+\begin{document}
+\maketitle
+\tableofcontents{}
+\newpage
+\section{Introduction}
+In this practical we wanted to calculate the refractive index of a glass block. The range of expected values is somewhere between 1.45 and 1.7 - these are the range of values for most glass types.
+
+\section{Method}
+To perform this core practical we used:
+\begin{itemize}
+    \item Glass block
+    \item Light box
+    \item Protractor
+    \item Ruler
+    \item Pen/pencil
+    \item Paper
+    
+
+\end{itemize}
+The light is shone at different angles into the glass block - this is easier in a darker room. We mark the path of light as it enters the block, as well as the path of the light as it leaves. We can then join the 2 points as it enters and leaves the block. Joining these 2 gives the path of the light through the block.
+
+We can then draw the normal's, and measure the angle of refraction and the angle of incidence. We collect multiple data points, allowing us to draw a graph.
+
+\begin{align*}
+    n_1\sin{\theta_i} &= n_2\sin{\theta_r}\\
+    n_1 &= 1\\
+    sin{\theta_i} &= n_2\sin{\theta_r}\\
+     n_2 &=\frac{\sin{\theta_i}}{\sin{\theta_r}}\\
+\end{align*}
+
+Therefore, a plot of $\sin{\theta_i}$ against $\sin{\theta_r}$ will (passing through (0,0)), the gradient will be the $n_2$ value, the refractive index of the glass.
+
+\subsection{Safety \& Hazards (Risk Assessment)}
+The equipment may get hot, the light box sometimes gets hot. The electricity may also be a hazard. The glass block could also shatter if dropped.
+
+\newpage
+
+\section{Data Collected \& Graph}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline 
+        Angle of Incidence ($\theta_i/\si{\degree} $) & Angle of Refraction ($\theta_r/\si{\degree} $) & $\sin{\theta_i}$ & $\sin{\theta_r}$ \\
+        \hline
+        0 & 0 & 0 & 0 \\
+        19 & 13 & 0.326 & 0.225 \\
+        14 & 8 & 0.242 & 0.139 \\
+        58 & 33 & 0.848 & 0.545 \\
+        22 & 11 & 0.375 & 0.191 \\
+        25 & 16 & 0.423 & 0.276 \\
+        41 & 35 & 0.656 & 0.574\\
+
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \makebox[\textwidth][c]{\includegraphics[width=1.11\linewidth]{pllotpng.png}}
+    \label{fig:my_label}
+\end{figure}
+
+
+
+
+
+\section{Anomaly}
+There was a single value that had to be removed from our calculations. This is the last row in the table above. Removing this value increase our $r$ value, and increased our confidence in the results.
+
+A possibility is the light was passed through an imperfection in the glass, or that there was an error in our measurements.
+
+\subsection{$n_2$ Value}
+As was seen in the graph, we observed an $n_2$ value of 1.58, whilst this is on the upper bound of what we might have expected, it is within the range.
+
+
+\section{Conclusion}
+We conducted our experiment safely and had no issues with safety, and none of the hazards became issues. The data, excluding the anomaly, was all very close to the trend line, and so we are confident in our results.
+
+The values found online suggest this could be crown glass, but it is difficult to say without more information, as there are many materials this could be.
+
+
+\end{document}
